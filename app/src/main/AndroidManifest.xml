@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.info.uygulama">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Uygulama">
+        <activity android:name=".YorumActivity"></activity>
+        <activity android:name=".OylamaActivity" />
+        <activity android:name=".IlkEkranActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DurakSoforListesiActivity" />
+        <activity android:name=".DetayActivityDuraklar" />
+        <activity android:name=".DetayActivity" />
+        <activity android:name=".KaydolActivity" />
+        <activity android:name=".GirisActivity" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

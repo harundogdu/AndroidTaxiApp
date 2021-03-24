@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetayActivityDuraklar">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_detayDurak"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/tabBarRenk"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewDetay_DurakResim"
+        android:layout_width="172dp"
+        android:layout_height="185dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewDetay_DurakIsım"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_detayDurak"
+        app:srcCompat="@drawable/durak" />
+
+    <TextView
+        android:id="@+id/textViewDetay_DurakIsım"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Çiçek Taksi"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewDetay_DurakMeslek"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewDetay_DurakResim" />
+
+    <TextView
+        android:id="@+id/textViewDetay_DurakMeslek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Taksi Durağı"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewDetay_DurakLokasyon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDetay_DurakIsım" />
+
+    <TextView
+        android:id="@+id/textViewDetay_DurakLokasyon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mamak / Ankara"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewDetay_DurakPuan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDetay_DurakMeslek" />
+
+    <TextView
+        android:id="@+id/textViewDetay_DurakPuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4.5"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDetay_DurakLokasyon" />
+</androidx.constraintlayout.widget.ConstraintLayout>

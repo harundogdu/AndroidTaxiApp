@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Şoförler Bölümü">
+        <menu>
+            <item
+                android:id="@+id/nav_birinci"
+                android:icon="@drawable/ic_baseline_person_24"
+                android:title="Şoför Listesi"></item>
+            <item
+                android:id="@+id/nav_ikinci"
+                android:icon="@drawable/ic_baseline_edit_24"
+                android:title="Şoför Yorumları"></item>
+        </menu>
+    </item>
+
+    <item android:title="Durak Bölümü">
+        <menu>
+            <item
+                android:id="@+id/nav_ucuncu"
+                android:icon="@drawable/ic_baseline_directions_car_24"
+                android:title="Duraklar"></item>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_baseline_exit_to_app_24"
+                android:title="Çıkış Yap"></item>
+        </menu>
+    </item>
+
+
+
+</menu>
